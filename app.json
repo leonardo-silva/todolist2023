@@ -1,0 +1,10 @@
+{
+  "expo": {
+    "name": "todolist2023",
+    "slug": "todolist2023",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
