@@ -1,27 +1,13 @@
-import { StatusBar } from 'expo-status-bar';
+import { StatusBar } from 'react-native';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+
+import { Home } from './src/screens/Home';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text style={styles.text}>
-        React Native ativado!!!
-      </Text>
-      <StatusBar style="auto" />
-    </View>
+    <>
+      <StatusBar barStyle="light-content" />
+      <Home />
+    </>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: 'white',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  text: {
-    color: 'black',
-    fontSize: 32
-  }
-});
