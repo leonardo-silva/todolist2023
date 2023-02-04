@@ -7,7 +7,7 @@ export const styles = StyleSheet.create({
   },
   text: {
     color: 'white',
-    fontSize: 32,
+    fontSize: 28,
     margin: 20
   },
   input: {
