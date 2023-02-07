@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Text, SafeAreaView, TextInput, TouchableOpacity } from 'react-native';
+import { Text, SafeAreaView, TextInput, TouchableOpacity, ScrollView, FlatList } from 'react-native';
 
 import { styles } from './styles';
 
@@ -34,6 +34,18 @@ export function Home() {
       <Text style={styles.text}>
         Minhas Tarefas
       </Text>
+
+      <FlatList
+        data={tasks}
+        keyExtractor={item => item}
+        renderItem={({ item }) => (
+          <TouchableOpacity style={styles.buttonTask}>
+            <Text style={styles.textTask}>
+              {item}
+            </Text>
+          </TouchableOpacity>
+        )}
+      />
     </SafeAreaView>
   );
 }
